@@ -11,11 +11,19 @@ public class Test_Car {
         System.out.println("Year: " + car1.year);
         System.out.println("Price: " + car1.price);
 
+        System.out.println("\nIs it running? " + car1.isRunning);
+        car1.start();
+        System.out.println("Is it running? " + car1.isRunning);
+
         System.out.println("\nSecond Car:");
         System.out.println("Brand: " + car2.make);
         System.out.println("Model: " + car2.model);
         System.out.println("Year: " + car2.year);
         System.out.println("Price: " + car2.price);
+
+        System.out.println("\nIs it running? " + car2.isRunning);
+        car2.start();
+        System.out.println("Is it running? " + car2.isRunning);
 
         System.out.println("\nThird Car:");
         System.out.println("Brand: " + car3.make);
