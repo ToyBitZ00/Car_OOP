@@ -21,4 +21,8 @@ public class Car {
         isRunning = false;
         System.out.println("You stopped the engine");
     }
+
+    void drive() {
+        System.out.println("You drive the " + model);
+    }
 }
