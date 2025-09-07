@@ -23,5 +23,9 @@ public class Test_Car {
         car2.start();
         System.out.println("Is it running? " + car2.isRunning);
 
+        System.out.println("\n");
+
+        car1.drive();
+        car2.drive();
     }
 }
