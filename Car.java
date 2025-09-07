@@ -11,4 +11,14 @@ public class Car {
         this.year = year;
         this.price = price;
     }
+
+    void start() {
+        isRunning = true;
+        System.out.println("You start the engine");
+    }
+
+    void stop() {
+        isRunning = false;
+        System.out.println("You stopped the engine");
+    }
 }
