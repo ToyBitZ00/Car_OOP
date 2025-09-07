@@ -2,8 +2,6 @@ public class Test_Car {
     public static void main(String[] args) {
         Car car1 = new Car("M3", "BMW", 2025, 59999.0);
         Car car2 = new Car("Civic", "Honda", 2022, 39999.0);
-        Car car3 = new Car("Vios", "Toyota", 2024, 49000.0);
-        Car car4 = new Car("Innova", "Toyota", 2025, 59999.0);
 
         System.out.println("First Car:");
         System.out.println("Brand: " + car1.make);
@@ -25,16 +23,5 @@ public class Test_Car {
         car2.start();
         System.out.println("Is it running? " + car2.isRunning);
 
-        System.out.println("\nThird Car:");
-        System.out.println("Brand: " + car3.make);
-        System.out.println("Model: " + car3.model);
-        System.out.println("Year: " + car3.year);
-        System.out.println("Price: " + car3.price);
-
-        System.out.println("\nFourth Car:");
-        System.out.println("Brand: " + car4.make);
-        System.out.println("Model: " + car4.model);
-        System.out.println("Year: " + car4.year);
-        System.out.println("Price: " + car4.price);
     }
 }
