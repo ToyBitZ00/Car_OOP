@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 public class Test_Car {
     public static void main(String[] args) {
-        Car car1 = new Car("M3", "BMW", 2025, 59999.0);
-        Car car2 = new Car("Civic", "Honda", 2022, 39999.0);
+        Scanner object = new Scanner(System.in);
+        Car car1 = new Car("BMW", "M3", 2025, 59999.0);
+        Car car2 = new Car("Honda", "Civic", 2022, 39999.0);
 
         System.out.println("First Car:");
         System.out.println("Brand: " + car1.make);
@@ -23,9 +26,28 @@ public class Test_Car {
         car2.start();
         System.out.println("Is it running? " + car2.isRunning);
 
+        System.out.println("What car would you like to use [1,2]: ");
+        int car = object.nextInt();
+
         System.out.println("\n");
 
-        car1.drive();
-        car2.drive();
+        if (car == 1) {
+            System.out.println("You chose the " + car1.model);
+            car1.start();
+            System.out.println("Is it running? " + car1.isRunning);
+            car1.drive();
+            car1.stop();
+        } else if (car == 2) {
+            System.out.println("You chose the " + car2.model);
+            car2.start();
+            System.out.println("Is it running? " + car2.isRunning);
+            car2.drive();
+            car2.stop();
+        } else {
+            System.out.println("You only have 2 cars at the moment!");
+            object.close();
+            return;
+        }
+        object.close();
     }
 }
